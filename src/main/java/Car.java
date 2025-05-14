@@ -13,11 +13,6 @@ public class Car {
         }
     }
 
-    public void move(RandomNumberProvider provider, Mover mover) {
-        int randomNumber = provider.getRandomNumber();
-        position += mover.move(randomNumber);
-    }
-
     public void move(int number) {
         if (number >= 4) {
             position++;
